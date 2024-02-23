@@ -1,0 +1,22 @@
+cucumber.feature 파일
+
+Feature = name of Test
+
+Scenario = test requirement
+
+Given = action will be taken on given condition (pre-requisite)
+When = when this action is taken (what user will do)
+Then = then, this result will show up
+And = Additional, then
+
+stepDefinition 파일에서 이것들은 static 이기 때문에 직접 import 해줘야함
+import static io.restassured.*;
+
+---------------------------------------------------
+ testRunner 파일
+Junit (testNG 같은거임) 형식으로 test runner 파일이 작성되므로 Junit을 import 해줘야함
+
+@Runwith(Cucumber.class)
+@CucumberOptions(features="featuerfilepath", glue={"stpedefinationfilename"})
+
+그리고 이거실행해서 나온 콘솔내용을 step Definition 파일에 복붙함

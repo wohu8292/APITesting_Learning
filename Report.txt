@@ -1,0 +1,16 @@
+maven cucumber reporting 깃허브로 들어가서 xml 파일에 추가한다
+
+설명
+======================================================
+execution 뒤에 verify phase 가 실행될겅미
+json result 파일을 input 으로 기대함
+=====================================================
+report 를위한 input으로 테스트결과를 담은 json 파일을 하나 생성해야됨
+@RunWith(Cucumber.class)
+@CucumberOptions(features={"featurefilepath"}, plugin="json: 경로", glue={"stepDefinition"})
+(path 관행은 보통 json:target/jsonReports/cucumber-report.json
+
+xml 파일들어가서 dependencies 위에 코드복붙
+
+cmd 로 들어가서 프로젝트로 경로 설정후 mvn test verify
+json 파일경로로 들어가면 json 파일이 생성되있을거임

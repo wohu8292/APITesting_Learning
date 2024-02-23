@@ -1,0 +1,8 @@
+Giver add place payload with "<name>" "<language>" "<address>"
+
+Examples:
+	|name		|language	|address
+	|woong		|korean		|9340w 49th ave
+
+
+데이터가 두개일때 로그파일을 덮어쓰지않도록 RequestSpecification 을 static 으로 받아야함.

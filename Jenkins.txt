@@ -1,0 +1,17 @@
+1. jenkins 로부터 general.war 파일 다운로드
+2. cmd의 파일이있는 폴더로 가서 java -jar jenkins.war --httpPort=8081 실행
+3. 브라우저에서 주소 localhost:8081
+
+비번: a922d8a8c620404eb5d3ff95857411a1
+
+
+-----------------------------------------------------
+
+parameterize
+1. configure 들어가서
+2. "$figure"
+3. 	chrome
+	firefox
+	IE
+
+

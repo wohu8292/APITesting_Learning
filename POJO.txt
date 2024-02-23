@@ -1,0 +1,45 @@
+Json파일에서 "types": ["shoe", "shop"]		// Array 에 두개의 값 [2], 자바내에 입려해야될 데이터
+
+POJO 파일에서 public List<String> types		// List 로 리턴받아야함
+
+Test 파일에서 
+List<String> myList = new ArrayList<String>();
+myList.add("shoe");			
+myList.add("shop");
+p.setType("myList");
+
+add 는 둘다에서 쓰이고 append 는 arrayList에서 쓰임, 
+array list 는 동적으로움직이기떄문에 확장될때 append 를 써줌` 
+
+
+
+--------------------------------------------------------------------
+
+"courses":{
+	"webAutomation":[~~~]
+	"api":	[
+		{"CourseTitle":"selenium", "price":"50"},
+		{"CourseTitle":"appium", "price":"40"}
+		]
+	"mobile":[
+		{"CourseTitle":"selenium", "price":"50"},
+		{"CourseTitle":"appium", "price":"40"}
+		]
+
+
+public course course;
+
+public list<webAutomation>
+public list<api>
+public list<mobile>
+
+public string CourseTitle
+public string price
+
+설명
+course course:
+"course" 바로 하위에 api, webAutomation, Mobile 을 담고있는 클래스가있다. "course" 와 똑같이 이들을 담고있는 클래스를 만들면된다.
+api api:
+api 바로하위에는 price, coursename 을 담고있는 클래스가 또있다. 
+List<api>:
+api 하위에 price, coursename 을 담고있는 클래스가 여러개다. list of api 다

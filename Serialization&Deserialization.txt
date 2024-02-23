@@ -1,0 +1,55 @@
+1. 39강 (json 이 파일로주어졌을때)
+Json to String -> file can convert into Byte -> Byte data to String
+
+body(new String(Files.readAllBytes(Paths.get("  "))))
+
+----------------------------------------------------------------------------------
+
+2. 50강
+public String getJsonPath(Response response, String key) {
+	String resp = response.asString();			//json response 를 string 으로 받음 
+	JsonPath js = new JsonPath(resp);
+	return js.get(key).toString();				//또는 js.getString("key");
+	}
+-----------------------------------------------------------------------------------
+
+3. 63강
+
+serialization 이란?
+process of converting a JAVA object into request body (payload)
+(setter 가지고 놈, for post?)
+
+POJO classes
+
+public class Message{
+	private String message;
+	privalte List<WebAutomation> auto;			/ array of class
+	
+	public String getMessage(){
+		return message;}
+
+	public String setMessage(String message){
+ 		this.message = message;}
+}
+
+Message m = new Message;
+m.setMessage("Hello");
+
+given.body(m).when().post("/message");
+
+-----------------------------------------------------------------------------------
+
+deserialization 이란?
+Converting response body back to java object
+(getter 가지고 놈, extract value, for get)
+
+pojoClass_Name name = given().queryParam().when().log().all().get("resource").as(pojoClass_Name.class);
+name.get~~
+
+------------------------------------------------------------------------------------
+parsing 이란 ? 
+https://themightyprogrammer.dev/article/parsing
+
+-------------------------------------------------------------------------------------
+
+

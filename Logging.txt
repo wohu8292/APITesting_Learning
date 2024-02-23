@@ -1,0 +1,11 @@
+PrintStream log = new PrintStream(new FileOutputStream("loggingfile"));	//output stream for writing data to file
+
+req = new requestSpecBuilder().setBaseUri("").addQueryParam("key", "wohu8292")
+	.addFilter(RequestLoggingFilter.logRequestTo(log))
+	.addFilter(ResponseLoggingFilter.logResponseTo(log))
+	.setContentType(ContentType.JSON).build();	
+	
+	//req 라는 object 에 모든것을 로그하는 로깅필터가 적용됨
+
+
+PrintStream pr = new PirntStream(new FileOutputStream("loggingFile"));

@@ -1,0 +1,22 @@
+이넘이란 Special class which has collection of methods
+
+
+이넘파일에서
+public enum className{
+	addPlaceAPI(""),
+	getPlaceApi(""),
+	deletePlaceAPI("");
+	private String resource;
+
+	constructor(String resource){						/resource 에 주소값 담김
+	this.resource=resource;
+	}
+
+	public String getResource(){
+	return resource;
+	}
+}
+
+테스트파일에서
+	enumclassname resourceAPI = enumclassname.valueOf(argument);		/valueOf 는 컨스트럭터를 실행시킴		
+	resourceAPI.getResource;

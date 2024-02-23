@@ -1,0 +1,4 @@
+Properties prop = new Properties();
+FileInputStream fis = new FileInputStream("propertyPath")
+prop.load(fis);
+prop.get("BaseURI");		// 헷갈리는것: FileUtils.readFileToString 은 new 필요없고 FileInputStream 은 new 필요함

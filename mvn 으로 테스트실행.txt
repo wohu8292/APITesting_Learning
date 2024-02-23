@@ -1,0 +1,4 @@
+cmd 들어가서
+
+cd 프로젝트 path
+mvn test -Dcucumber.options="--tags @tagname"

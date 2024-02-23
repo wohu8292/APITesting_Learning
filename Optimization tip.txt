@@ -1,0 +1,2 @@
+1. 데이터의 Serialization 은 resource 네이밍해서 따로정리
+2. 108
